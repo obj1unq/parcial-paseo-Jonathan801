@@ -6,7 +6,7 @@ class Prenda{
 	var desgaste = 0
 	var abrigo=1
 	method tallePrenda()=talle.talle()
-	method coincideTalle(hijo)=if(talle.talle()==hijo.talle()) 8 else 0
+	method coincideTalle(hijo)=if(self.tallePrenda()==hijo.talleMio()) 8 else 0
 	method nivelDesgaste(hijo)
 	method nivelComodidad(hijo)=self.coincideTalle(hijo) - self.nivelDesgaste(hijo).min(3)
 	method nivelAbrigo()=abrigo
@@ -69,7 +69,7 @@ class Hijo{
 	var talle
 	var property edad
 	var property prendas=#{}
-	method talle()=talle.talle()
+	method talleMio()=talle.talle()
 	method cantPrendasUsadas()=prendas.size()
 	method cantPrendasNecesariasParaSalir()=5
 	method tienePrendaConAbrigoSuperior()=prendas.any({prenda=>prenda.nivelAbrigo()>=3})

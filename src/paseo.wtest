@@ -86,50 +86,50 @@ describe "test de una familia que NO pasea" {
 	}
 
 //PUNTO 3	
-//	test "nivel de abrigo" {
-//		assert.equals(2 ,  mediasZoe.nivelAbrigo())
-//		assert.equals(2 , zapatillasZoe.nivelAbrigo())
-//		assert.equals(5 , jeanZoe.nivelAbrigo())
-//		assert.equals(1 , remeraZoe.nivelAbrigo())
-//		assert.equals(3 , camperaZoe.nivelAbrigo())
-//		assert.equals(1 , remeraMilena.nivelAbrigo())		
-//		assert.equals(1 , calzaMilena.nivelAbrigo())
-//		assert.equals(5 , ojotasMilena.nivelAbrigo())
-//	}
+	test "nivel de abrigo" {
+		assert.equals(2 ,  mediasZoe.nivelAbrigo())
+		assert.equals(2 , zapatillasZoe.nivelAbrigo())
+		assert.equals(5 , jeanZoe.nivelAbrigo())
+		assert.equals(1 , remeraZoe.nivelAbrigo())
+		assert.equals(3 , camperaZoe.nivelAbrigo())
+		assert.equals(1 , remeraMilena.nivelAbrigo())		
+		assert.equals(1 , calzaMilena.nivelAbrigo())
+		assert.equals(5 , ojotasMilena.nivelAbrigo())
+	}
 
-////PUNTO 4		
-//	test "puede salir de paseo" {
-//		assert.that(familiaAptaSalir.puedeSalirDePaseo())
-//		assert.notThat(familiaNoAptaParaSalir.puedeSalirDePaseo())
-//	}
-////PUNTO 5
-//	
-//	test "infaltables" {
-//		assert.equals(#{jeanZoe,calzaMilena}, familiaNoAptaParaSalir.prendasInfaltables())		
-//	}
-//	test "chiquitos" {
-//		assert.equals(#{milena}, familiaNoAptaParaSalir.hijosChiquitos())		
-//	}
-//	
+//PUNTO 4		
+	test "puede salir de paseo" {
+		assert.that(familiaAptaSalir.puedeSalirDePaseo())
+		assert.notThat(familiaNoAptaParaSalir.puedeSalirDePaseo())
+	}
+//PUNTO 5
+	
+	test "infaltables" {
+		assert.equals(#{jeanZoe,calzaMilena}, familiaNoAptaParaSalir.prendasInfaltables())		
+	}
+	test "chiquitos" {
+		assert.equals(#{milena}, familiaNoAptaParaSalir.hijosChiquitos())		
+	}
+	
 //PUNTO 6	
-//test "salir de paseo ok" {
-//		familiaAptaSalir.salirDePaseo()
-//		assert.equals(1.8 , mediaIzquierda.nivelDesgaste(zoe))
-//		assert.equals(4.2 , mediaDerecha.nivelDesgaste(zoe))
-//		assert.equals(3 , mediasZoe.nivelDesgaste(zoe))
-//		assert.equals(1 , zapatillasZoe.nivelDesgaste(zoe))
-//		assert.equals(1 , jeanZoe.nivelDesgaste(zoe))
-//		assert.equals(1 , remeraZoe.nivelDesgaste(zoe))
-//		assert.equals(1 , camperaZoe.nivelDesgaste(zoe))
-//		
-//	}
-////PUNTO 7	
-//	test "salir de paseo no ok" {
-//		//Que sucede si le pido pasear a una familia que no está lista?
-//		//El test está incompleto!
-//		assert.throwsException({familiaNoAptaParaSalir.salirDePaseo()})
-//	}
-//	
-//
+test "salir de paseo ok" {
+		familiaAptaSalir.salirDePaseo()
+		assert.equals(1.8 , mediaIzquierda.nivelDesgaste(zoe))
+		assert.equals(4.2 , mediaDerecha.nivelDesgaste(zoe))
+		assert.equals(3 , mediasZoe.nivelDesgaste(zoe))
+		assert.equals(1 , zapatillasZoe.nivelDesgaste(zoe))
+		assert.equals(1 , jeanZoe.nivelDesgaste(zoe))
+		assert.equals(1 , remeraZoe.nivelDesgaste(zoe))
+		assert.equals(1 , camperaZoe.nivelDesgaste(zoe))
+		
+	}
+//PUNTO 7	
+	test "salir de paseo no ok" {
+		//Que sucede si le pido pasear a una familia que no está lista?
+		//El test está incompleto!
+		assert.throwsException({familiaNoAptaParaSalir.salirDePaseo()})
+	}
+	
+
 
 }
